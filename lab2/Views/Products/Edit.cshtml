@@ -1,0 +1,18 @@
+﻿@model  lab2.Models.Product
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Product</h2>
+
+@using (Html.BeginForm("Edit", "Products", FormMethod.Post))
+{
+    @Html.HiddenFor(p => p.Id)
+    @Html.LabelFor(p => p.Name)
+    @Html.EditorFor(p => p.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(p => p.Name)
+    @Html.LabelFor(p => p.Price)
+    @Html.EditorFor(p => p.Price, new { @class = "form-control" })
+    @Html.ValidationMessageFor(p => p.Price)
+    <input type="submit" value="Submit" class="btn-primary" />
+}

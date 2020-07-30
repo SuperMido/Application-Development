@@ -7,13 +7,13 @@ namespace lab2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddProductToDb : IMigrationMetadata
+    public sealed partial class FirstCreateDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddProductToDb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(FirstCreateDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "202007230232157_AddProductToDb"; }
+            get { return "202007300127512_FirstCreateDatabase"; }
         }
         
         string IMigrationMetadata.Source

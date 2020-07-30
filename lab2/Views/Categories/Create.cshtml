@@ -1,0 +1,14 @@
+﻿@model  lab2.Models.Category
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Category</h2>
+
+@using (Html.BeginForm("Create", "Categories", FormMethod.Post))
+{
+    @Html.LabelFor(p => p.Name)
+    @Html.TextBoxFor(p => p.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(p => p.Name)
+    <input type="submit" value="Submit" class="btn-primary" />
+}

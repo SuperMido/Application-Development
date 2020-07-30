@@ -1,0 +1,17 @@
+﻿@model IEnumerable<lab2.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index Category</h2>
+
+@Html.ActionLink("Create a New Category", "Create")
+
+@foreach (var p in Model)
+{
+    <ul>
+        <li>@p.Id</li>
+        <li>@p.Name</li>
+    </ul>
+}
