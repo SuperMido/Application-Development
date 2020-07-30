@@ -7,13 +7,13 @@ namespace MVCBlog.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class UpdateAccount : IMigrationMetadata
+    public sealed partial class FirstCreateDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateAccount));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(FirstCreateDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "202007230403511_UpdateAccount"; }
+            get { return "202007241048221_FirstCreateDatabase"; }
         }
         
         string IMigrationMetadata.Source
